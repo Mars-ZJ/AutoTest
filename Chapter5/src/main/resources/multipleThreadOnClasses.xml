@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="suitename" parallel="classes" thread-count="10">
+    <!--
+        test级别：相同的test tag下的用例可以在同一个线程下执行
+        methods级别：所有用例都可以在不同的线程下去执行
+        classes级别：：相同的class tag 下的用例再同一个线程下
+        thread-count:代表了最大并发线程数
+    -->
+    <test name="第一波测试用例">
+        <classes>
+            <class name="com.course.testng.MultipleThreadOnThread"/>
+            <class name="com.course.testng.BasicAnnotation"/>
+        </classes>
+    </test>
+</suite>

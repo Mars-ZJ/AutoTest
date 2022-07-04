@@ -1,0 +1,30 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 10.749 sec <<< FAILURE! - in TestSuite
+addUser(com.course.cases.AddUserTest)  Time elapsed: 0.032 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at com.course.cases.AddUserTest.addUser(AddUserTest.java:29)
+
+getUserInfo(com.course.cases.GetUserInfoTest)  Time elapsed: 3.056 sec  <<< FAILURE!
+java.lang.AssertionError: expected [[{"password":"123456","isDelete":null,"sex":null,"permission":null,"id":1,"userName":"zhangsan","age":null}]] but found [[{"password":"123456","id":1,"userName":"zhangsan"}]]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.course.cases.GetUserInfoTest.getUserInfo(GetUserInfoTest.java:42)
+
+updateUserInfo(com.course.cases.UpdateUserInfoTest)  Time elapsed: 0.028 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at com.course.cases.UpdateUserInfoTest.updateUserInfo(UpdateUserInfoTest.java:25)
+
+deleteUser(com.course.cases.UpdateUserInfoTest)  Time elapsed: 0.026 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at com.course.cases.UpdateUserInfoTest.deleteUser(UpdateUserInfoTest.java:63)
+
+getUserListInfo(com.course.cases.GetUserInfoListTest)  Time elapsed: 0.025 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at com.course.cases.GetUserInfoListTest.getUserListInfo(GetUserInfoListTest.java:27)
+
